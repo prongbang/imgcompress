@@ -1,0 +1,19 @@
+[package]
+name = "compress"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "compress"
+# this is needed to build for iOS and Android.
+crate-type = ["lib", "staticlib", "cdylib"]
+
+[profile.release]
+strip = true
+opt-level = 3
+codegen-units = 1
+panic = "abort"
+
+[dependencies]
+flutter_rust_bridge = "1.82.6"
+mozjpeg = "0.10.7"
