@@ -12,8 +12,6 @@ It is really easy to use! You should ensure that you add the `imgcompress` as a 
 imgcompress: "^1.0.0"
 ```
 
-![screenshot.png](example/screenshot.png)
-
 ## Usage
 
 #### New instance
@@ -41,3 +39,7 @@ var data = await _imgCompress.compress(ImgCompressOption(
   format: ImgCompressFormat.jpeg,
 ));
 ```
+
+#### Example
+
+![screenshot.png](example/screenshot.png)
